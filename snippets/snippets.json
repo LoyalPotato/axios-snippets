@@ -1,0 +1,105 @@
+{
+	"Axios Request" : {
+		"prefix": "axprq",
+		"body": [
+			"axios.request(${1:config});",
+			"$0"
+		]
+	},
+	"Axios Finally" : {
+		"prefix": "axfnl",
+		"body": [
+			".finally(function($1){",
+			"$0",
+			"});"
+		]
+	},
+	"Axios Get" : {
+		"prefix": "axgt",
+		"body": [
+			"axios.get(${1:url}${2:,params})",
+			"$0"
+		]
+	},
+	"Axios Post" : {
+		"prefix": "axpst",
+		"body": [
+			"axios.post(${1:url}${2:,data}${3:,config})",
+			"$0"
+		]
+	},
+	"Axios Put" : {
+		"prefix": "axput",
+		"body": [
+			"axios.put(${1:url}${2:,data}${3:,config})",
+			"$0"
+		]
+	},
+	"Axios Patch" : {
+		"prefix": "axpat",
+		"body": [
+			"axios.patch(${1:url}${2:,data}${3:,config})",
+			"$0"
+		]
+	},
+	"Axios Delete" : {
+		"prefix": "axdlt",
+		"body": [
+			"axios.delete(${1:url}${2:,config})",
+			"$0"
+		]
+	},
+	"Axios Head" : {
+		"prefix": "axhd",
+		"body": [
+			"axios.head(${1:url}${2:,config})",
+			"$0"
+		]
+	},
+	"Axios Options" : {
+		"prefix": "axopt",
+		"body": [
+			"axios.options(${1:url}${2:,config})",
+			"$0"
+		]
+	},
+	"Axios Then" : {
+		"prefix": "axth",
+		"body": [
+			".then(function(${1:repsponse}){",
+			"$2console.log(${1:response});",
+			"$0",
+			"})"
+		]
+	},
+	"Axios Catch" : {
+		"prefix": "axcth",
+		"body": [
+			".catch(function (${1:error}) {",
+            "$2console.log(${1:error})",
+			"});"
+		]
+	},
+	"Axios All" : {
+		"prefix": "axall",
+		"body": [
+			"axios.all([$1,$2])",
+			"$0"
+		]
+	},
+	"Axios Spread" : {
+		"prefix": "axsprd",
+		"body": [
+			"axios.spread(function ($1) {",
+            "$0",
+			"})"
+		]
+	},
+	"Axios CDN" : {
+		"prefix" : "axcdn",
+		"body" : [
+			"<script src='https://unpkg.com/axios/dist/axios.min.js'></script>"
+		]
+	}
+	
+}
