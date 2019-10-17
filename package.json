@@ -4,6 +4,7 @@
     "description": "Simple snippets for faster axios code writing",
     "version": "1.0.0",
     "publisher" : "loyalpotato",
+    "repository": "https://github.com/LoyalPotato/axios-snippets",
     "engines": {
         "vscode": "^1.39.0"
     },

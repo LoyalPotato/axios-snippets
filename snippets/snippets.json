@@ -76,7 +76,7 @@
 		"prefix": "axcth",
 		"body": [
 			".catch(function (${1:error}) {",
-            "$2console.log(${1:error})",
+            "$2console.log(${1:error});",
 			"});"
 		]
 	},
