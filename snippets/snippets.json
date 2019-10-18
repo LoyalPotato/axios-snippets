@@ -1,6 +1,6 @@
 {
 	"Axios Request" : {
-		"prefix": "axprq",
+		"prefix": "axrq",
 		"body": [
 			"axios.request(${1:config});",
 			"$0"

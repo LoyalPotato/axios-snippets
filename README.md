@@ -12,7 +12,7 @@ Use is just like any other snippet. Just start typing it and when it shows up, h
 Methods | Snippets
 ---     | ---
 cdn | axcdn
-axios.request  | axprq
+axios.request  | axrq
 axios.get | axgt
 axios.delete | axdlt
 axios.head | axhd
