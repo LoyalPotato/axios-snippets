@@ -15,7 +15,7 @@
 		]
 	},
 	"Axios Get" : {
-		"prefix": "axgt",
+		"prefix": "axget",
 		"body": [
 			"axios.get(${1:url}${2:,params})",
 			"$0"
@@ -66,8 +66,8 @@
 	"Axios Then" : {
 		"prefix": "axth",
 		"body": [
-			".then(function(${1:repsponse}){",
-			"$2console.log(${1:response});",
+			".then(${1:function(response)}{",
+			"console.log(${2:response});",
 			"$0",
 			"})"
 		]
@@ -75,8 +75,9 @@
 	"Axios Catch" : {
 		"prefix": "axcth",
 		"body": [
-			".catch(function (${1:error}) {",
-            "$2console.log(${1:error});",
+			".catch(${1:function(error)}{",
+			"console.log(${2:error});",
+			"$0",
 			"});"
 		]
 	},
@@ -98,7 +99,8 @@
 	"Axios CDN" : {
 		"prefix" : "axcdn",
 		"body" : [
-			"<script src='https://unpkg.com/axios/dist/axios.min.js'></script>"
+			"<script src='https://unpkg.com/axios/dist/axios.min.js'></script>",
+			"$0"
 		]
 	}
 	
